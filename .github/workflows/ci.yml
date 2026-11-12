@@ -41,5 +41,5 @@ jobs:
           context: .
           push: ${{ github.ref == 'refs/heads/main' && github.event_name == 'push' }}
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/flask-enterprise-app:latest
-            ${{ secrets.DOCKER_USERNAME }}/flask-enterprise-app:${{ github.sha }}
+            anusakhtar/flask-enterprise-app:latest
+            anusakhtar/flask-enterprise-app:${{ github.sha }}
